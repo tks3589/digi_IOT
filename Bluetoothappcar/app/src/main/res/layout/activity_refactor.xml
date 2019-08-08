@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="395dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView">
+
+        <Button
+            android:id="@+id/mainled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_main_led" />
+
+        <Button
+            android:id="@+id/greenled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_green_led" />
+
+        <Button
+            android:id="@+id/blueled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_blue_led" />
+
+        <Button
+            android:id="@+id/redled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_red_led" />
+
+        <Button
+            android:id="@+id/yellowled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_yellow_led" />
+
+        <Button
+            android:id="@+id/fan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open_fan" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="255" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
